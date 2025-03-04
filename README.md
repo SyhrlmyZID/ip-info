@@ -53,6 +53,4 @@
 
 ## Screenshot
 
-Tambahkan screenshot aplikasi di bawah ini untuk memperlihatkan bagaimana alat ini bekerja.
-
 ![Screenshot](img/screenshot.png)
