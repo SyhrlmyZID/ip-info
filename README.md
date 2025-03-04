@@ -44,11 +44,11 @@
 
 2. Jalankan script ini menggunakan perintah berikut:
    ```bash
-   python3 main.py <domain>
+   python3 ip_info.py <domain>
    ```
    Gantilah `<domain>` dengan nama domain target, misalnya:
    ```bash
-   python3 main.py google.com
+   python3 ip_info.py google.com
    ```
 
 ## Screenshot
