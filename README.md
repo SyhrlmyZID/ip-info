@@ -1,92 +1,58 @@
-# IP Info - Web Intelligence Tool
 
-## 📌 Deskripsi
-IP Info adalah alat berbasis Python untuk mengumpulkan informasi tentang domain atau website. Alat ini dapat digunakan untuk mendapatkan informasi berikut:
+# IP Info
 
-- Alamat IP (IPv4 & IPv6)
-- Lokasi Geografis (Kota, Wilayah, Latitude, Longitude)
-- Zona Waktu
-- Penyedia Layanan Internet (ISP)
-- Organisasi yang mengelola IP
-- Informasi DNS (Name Server)
+**IP Info** adalah tools yang digunakan untuk memeriksa informasi terkait domain seperti alamat IP (IPv4 dan IPv6), informasi geografis berdasarkan IP, dan informasi DNS (Name Server).
 
-Proyek ini bersifat **open-source** dan dapat digunakan pada berbagai platform seperti **Linux, Windows, macOS, dan Termux**.
+## Cara Cek Versi Python pada Setiap OS
 
-## 🚀 Instalasi
-Sebelum menjalankan script, pastikan Anda sudah menginstal dependensi yang diperlukan.
+### Windows
+1. Buka Command Prompt (`cmd`).
+2. Jalankan perintah berikut untuk memeriksa versi Python:
+   ```bash
+   python --version
+   ```
+   atau
+   ```bash
+   python3 --version
+   ```
 
-### 1️⃣ Persyaratan
-Python **3.x** harus terinstal di sistem Anda. 
-Cek versi Python dengan perintah berikut:
-```bash
-python3 --version
-```
+### Linux/macOS
+1. Buka Terminal.
+2. Jalankan perintah berikut untuk memeriksa versi Python:
+   ```bash
+   python3 --version
+   ```
 
-### 2️⃣ Instalasi Dependensi
-Jalankan perintah berikut untuk menginstal pustaka yang dibutuhkan:
-```bash
-pip install requests dnspython colorama
-```
+## Install Liblary Yang Di Butuhkan
 
-## 🛠 Cara Penggunaan
-Jalankan perintah berikut sesuai dengan sistem operasi yang digunakan.
+### Windows
+   ```bash
+   pip install requests dnspython colorama
+   ```
 
-### 🔹 Linux & macOS
-```bash
-python3 main.py example.com
-```
+### Linux/macOS
+   ```bash
+   pip3 install requests dnspython colorama
+   ```
 
-### 🔹 Windows (Command Prompt / PowerShell)
-```powershell
-python main.py example.com
-```
+## Cara Penggunaan
 
-### 🔹 Termux (Android)
-```bash
-python main.py example.com
-```
+1. Clone repository ini ke sistem lokal Anda:
+   ```bash
+   git clone https://github.com/SyhrlmyZID/ip-info.git
+   ```
 
-## 📌 Contoh Output
-```bash
-$ python3 main.py example.com
+2. Jalankan script ini menggunakan perintah berikut:
+   ```bash
+   python3 main.py <domain>
+   ```
+   Gantilah `<domain>` dengan nama domain target, misalnya:
+   ```bash
+   python3 main.py google.com
+   ```
 
-[Processing...]
-==================================================
-Hasil Pemeriksaan:
-==================================================
-IP Address:
-  IPv4: 93.184.216.34
-  IPv6: Not Available
+## Screenshot
 
-Informasi Geografis:
-  City: Los Angeles
-  Region: California
-  Latitude: 34.0522
-  Longitude: -118.2437
-  Time Zone: America/Los_Angeles
-  ISP: Edgecast Inc.
-  Organization: Verizon Digital Media
-  AS: AS15133 Verizon Digital Media Services
+Tambahkan screenshot aplikasi di bawah ini untuk memperlihatkan bagaimana alat ini bekerja.
 
-DNS Information:
-  Name Server 1: ns1.example.com
-  Name Server 2: ns2.example.com
-==================================================
-Scan Selesai!
-==================================================
-```
-
-## 🖼️ Screenshot
-Berikut adalah tampilan saat menjalankan script:
-
-![IP Info Screenshot](screenshot.png)
-
-## 🛠 Kontribusi
-Kami menerima kontribusi dari siapa saja yang ingin mengembangkan proyek ini lebih lanjut. Silakan **fork** repository ini dan buat **pull request** untuk menyarankan perubahan atau perbaikan.
-
-## ⚖️ Lisensi
-Proyek ini dilisensikan di bawah **MIT License**. Anda bebas menggunakannya dengan syarat mencantumkan atribusi yang sesuai.
-
----
-✍️ Created by: [Your Name]
-
+![Screenshot](img/screenshot.png)
